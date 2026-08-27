@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MymusicalExplore — Jelajahi Musik Barat Lintas Genre</title>
+<meta name="description" content="MymusicalExplore adalah galeri musik kurasi lagu-lagu Barat lintas genre: hip-hop, pop, energik, dan balada — dalam satu pengalaman menonton yang mulus.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%238B5CF6'/%3E%3Crect x='24' y='52' width='10' height='28' rx='4' fill='white'/%3E%3Crect x='45' y='34' width='10' height='46' rx='4' fill='white'/%3E%3Crect x='66' y='44' width='10' height='36' rx='4' fill='white'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-name">Mymusical<span class="brand-accent">Explore</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#hero" class="nav-link">Beranda</a>
+      <a href="#gallery" class="nav-link">Galeri Video</a>
+      <a href="#genres" class="nav-link">Genre</a>
+      <a href="#about" class="nav-link">Tentang</a>
+      <a href="#newsletter" class="nav-link">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="favToggleBtn" title="Lihat lagu favorit" aria-label="Lihat lagu favorit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        <span class="fav-count" id="favCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="eq-decor eq-decor-left" aria-hidden="true"></div>
+    <div class="eq-decor eq-decor-right" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Galeri Musik Kurasi</p>
+      <h1 class="hero-title reveal">
+        Dengarkan dunia<br>
+        dalam <span class="grad-text">warna ungu &amp; biru.</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Empat nada, empat suasana hati — hip-hop yang menghentak, energi yang meledak, pop yang nempel di kepala, dan balada yang menyayat. Semua dikurasi dalam satu galeri video yang bisa kamu jelajahi kapan saja.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#gallery" class="btn btn-primary">
+          <span>Jelajahi Galeri</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#genres" class="btn btn-ghost">Lihat Genre</a>
+      </div>
+    </div>
+
+    <a href="#gallery" class="scroll-cue" aria-label="Gulir ke bawah">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Lagu Kurasi</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Genre &amp; Mood</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="100" data-suffix="%">0</span>
+        <span class="stat-label">Bebas Iklan Musik</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="1">0</span>
+        <span class="stat-label">Galeri, Semua Mood</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO GALLERY / CAROUSEL ============ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Galeri Video</p>
+        <h2 class="section-title">Carousel Lagu Pilihan</h2>
+        <p class="section-desc">Geser, klik panah, atau ketuk kartunya langsung untuk memutar video. Gunakan filter di bawah untuk menyaring berdasarkan genre.</p>
+      </div>
+
+      <div class="filter-pills reveal" id="filterPills" role="tablist" aria-label="Filter genre">
+        <button class="pill is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+        <!-- genre pills injected by JS -->
+      </div>
+
+      <div class="carousel-wrap reveal">
+        <button class="carousel-nav prev" id="prevBtn" aria-label="Video sebelumnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+
+        <div class="carousel-track" id="carouselTrack" tabindex="0" aria-label="Daftar video, geser untuk menjelajah">
+          <!-- video cards injected by JS -->
+        </div>
+
+        <button class="carousel-nav next" id="nextBtn" aria-label="Video berikutnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ GENRE EXPLORER ============ -->
+  <section class="section genres-section" id="genres">
+    <div class="genres-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head reveal light-on-dark">
+        <p class="eyebrow">Jelajahi Mood</p>
+        <h2 class="section-title">Satu Genre, Satu Suasana Hati</h2>
+        <p class="section-desc">Setiap genre punya karakternya sendiri. Pilih salah satu untuk langsung melompat ke lagunya di galeri.</p>
+      </div>
+
+      <div class="genre-grid" id="genreGrid">
+        <!-- genre cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1619983081563-430f63602796?fm=jpg&amp;q=70&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Piringan hitam vinyl berwarna ungu di atas meja" loading="lazy">
+        <div class="about-media-badge">
+          <span class="brand-eq brand-eq-sm" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          Kurasi Manusia, Bukan Algoritma
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow">Tentang MymusicalExplore</p>
+        <h2 class="section-title">Ruang kecil untuk telinga yang ingin tahu.</h2>
+        <p>
+          MymusicalExplore lahir dari satu pertanyaan sederhana: kenapa mendengarkan musik lintas genre harus berpindah-pindah aplikasi? Di sini, hip-hop yang menghentak, pop yang catchy, energi yang meledak, dan balada yang syahdu duduk berdampingan dalam satu galeri yang sama.
+        </p>
+        <p>
+          Setiap lagu dipilih manual — bukan hasil algoritma — supaya setiap kunjungan terasa seperti membuka rekomendasi dari teman yang paham musik, bukan playlist otomatis yang generik.
+        </p>
+
+        <ul class="about-list">
+          <li><span class="check">✓</span> Pemutaran langsung dari YouTube, tanpa perlu pindah tab.</li>
+          <li><span class="check">✓</span> Filter genre &amp; mood untuk menemukan nada yang pas.</li>
+          <li><span class="check">✓</span> Simpan lagu favoritmu, tersimpan otomatis di perangkatmu.</li>
+          <li><span class="check">✓</span> Desain ringan, cepat, dan nyaman di HP maupun desktop.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER / CONTACT ============ -->
+  <section class="section newsletter-section" id="newsletter">
+    <div class="container newsletter-inner reveal">
+      <div class="eq-decor eq-decor-center" aria-hidden="true"></div>
+      <p class="eyebrow">Tetap Terhubung</p>
+      <h2 class="section-title">Dapat kabar tiap ada lagu baru masuk galeri.</h2>
+      <p class="section-desc">Tinggalkan email kamu — nggak ada spam, cuma update kurasi musik baru sesekali.</p>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="nama@email.com" required aria-label="Alamat email">
+        <button type="submit" class="btn btn-primary">Berlangganan</button>
+      </form>
+      <p class="form-note" id="newsletterNote" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-player" role="dialog" aria-modal="true" aria-label="Pemutar video">
+    <button class="modal-close" id="modalCloseBtn" aria-label="Tutup pemutar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-frame-wrap">
+      <div class="modal-loading" id="modalLoading" aria-hidden="true">
+        <span class="brand-eq brand-eq-lg"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <iframe id="modalIframe" src="" title="Pemutar Video YouTube" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="modal-meta">
+      <span class="modal-genre-badge" id="modalGenreBadge"></span>
+      <h3 id="modalTitle">Memuat judul…</h3>
+      <p id="modalAuthor"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <span class="brand-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-name">Mymusical<span class="brand-accent">Explore</span></span>
+      </a>
+      <p>Galeri musik kurasi lintas genre — hip-hop, pop, energik, dan balada dalam satu tempat.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Jelajahi</h4>
+      <a href="#hero">Beranda</a>
+      <a href="#gallery">Galeri Video</a>
+      <a href="#genres">Genre</a>
+      <a href="#about">Tentang</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Ikuti</h4>
+      <a href="#" onclick="return false;">Instagram</a>
+      <a href="#" onclick="return false;">TikTok</a>
+      <a href="#" onclick="return false;">YouTube</a>
+    </div>
+
+    <div class="footer-credit">
+      <h4>Kredit</h4>
+      <p>Video &amp; thumbnail via YouTube.</p>
+      <p>Foto oleh <a href="https://unsplash.com/@insungpandora" target="_blank" rel="noopener">insung yoon</a>, <a href="https://unsplash.com/@nicolasflor" target="_blank" rel="noopener">Nicolás Flor</a> &amp; <a href="https://unsplash.com/@introspectivedsgn" target="_blank" rel="noopener">Erik Mclean</a> di Unsplash.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> MymusicalExplore. Dibuat untuk pecinta musik lintas genre.</p>
+    <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">↑</button>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

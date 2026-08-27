@@ -1,0 +1,68 @@
+{
+  "site": {
+    "name": "MymusicalExplore",
+    "tagline": "Satu ruang, seribu warna musik Barat.",
+    "description": "MymusicalExplore adalah galeri musik kurasi yang mengumpulkan lagu-lagu Barat lintas nada dan genre — dari hip-hop yang menghentak, pop energik, hingga balada yang menyayat — dalam satu pengalaman menonton yang mulus."
+  },
+  "genres": [
+    {
+      "id": "hip-hop",
+      "label": "Hip-Hop",
+      "accent": "#8B5CF6",
+      "description": "Beat tebal, lirik tajam, sikap penuh percaya diri."
+    },
+    {
+      "id": "energik",
+      "label": "Energik",
+      "accent": "#5B6EF5",
+      "description": "Tempo cepat, energi tinggi, wajib diputar keras."
+    },
+    {
+      "id": "pop",
+      "label": "Pop",
+      "accent": "#3B82F6",
+      "description": "Melodi ramah telinga yang gampang nempel di kepala."
+    },
+    {
+      "id": "balada",
+      "label": "Balada",
+      "accent": "#6D5BD0",
+      "description": "Tempo pelan, lirik dalam, cocok untuk malam yang syahdu."
+    }
+  ],
+  "videos": [
+    {
+      "youtubeId": "OOKMf-kMEdg",
+      "genreId": "hip-hop",
+      "mood": "Chart Populer",
+      "fallbackTitle": "Hip-Hop Chart Hit",
+      "fallbackAuthor": "Kurasi MymusicalExplore",
+      "note": "Salah satu lagu hip-hop Barat yang paling banyak diputar — beat solid dengan flow yang mudah diikuti."
+    },
+    {
+      "youtubeId": "lGsb4DVmihg",
+      "playlistId": "PLIwgFYeS_Ty79sR0fNzD_cRfq_iAkokqO",
+      "genreId": "pop",
+      "mood": "Playlist Pilihan",
+      "fallbackTitle": "Pop Playlist Favorit",
+      "fallbackAuthor": "Kurasi MymusicalExplore",
+      "note": "Bagian dari playlist pop pilihan — melodi catchy yang cocok didengar berulang."
+    },
+    {
+      "youtubeId": "JRFuI4obvfw",
+      "genreId": "energik",
+      "mood": "Energetic Anthem",
+      "fallbackTitle": "Energetic Pop Anthem",
+      "fallbackAuthor": "Kurasi MymusicalExplore",
+      "note": "Anthem energik yang pas untuk workout, road trip, atau menaikkan mood seketika."
+    },
+    {
+      "youtubeId": "fPRs1r9l2Us",
+      "genreId": "balada",
+      "mood": "Sad Song Populer",
+      "fallbackTitle": "Emotional Ballad",
+      "fallbackAuthor": "Kurasi MymusicalExplore",
+      "note": "Balada emosional yang populer — untuk kamu yang butuh lagu teman merenung."
+    }
+  ]
+}
