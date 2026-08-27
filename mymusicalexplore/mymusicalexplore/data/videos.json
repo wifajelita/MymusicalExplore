@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "site": "MymusicalExplore",
+    "description": "Kurasi video musik barat dengan nada dan suasana berbeda-beda, disatukan dalam satu galeri.",
+    "note": "Judul & channel diambil otomatis dari YouTube saat halaman dibuka. Field 'fallbackTitle' hanya dipakai jika koneksi ke YouTube gagal."
+  },
+  "videos": [
+    {
+      "id": "v1",
+      "youtubeId": "Pri6PgG1-V4",
+      "mood": "Uptempo",
+      "genre": "Pop / Energic",
+      "accent": "purple",
+      "fallbackTitle": "Pilihan Musik #1",
+      "fallbackChannel": "YouTube"
+    },
+    {
+      "id": "v2",
+      "youtubeId": "I4sd4an3020",
+      "mood": "Akustik & Mellow",
+      "genre": "Akustik",
+      "accent": "blue",
+      "fallbackTitle": "Pilihan Musik #2",
+      "fallbackChannel": "YouTube"
+    },
+    {
+      "id": "v3",
+      "youtubeId": "13WxOTSilhY",
+      "mood": "Elektronik & Synth",
+      "genre": "Elektronik",
+      "accent": "purple",
+      "fallbackTitle": "Pilihan Musik #3",
+      "fallbackChannel": "YouTube"
+    },
+    {
+      "id": "v4",
+      "youtubeId": "OOKMf-kMEdg",
+      "mood": "Balada Emosional",
+      "genre": "Balada",
+      "accent": "blue",
+      "fallbackTitle": "Pilihan Musik #4",
+      "fallbackChannel": "YouTube"
+    }
+  ]
+}
